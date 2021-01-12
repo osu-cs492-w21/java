@@ -1,5 +1,7 @@
 import employees.Employee;
 import employees.Instructor;
+import employees.Professor;
+import employees.Lecturer;
 
 class EmployeeStuff {
   public static void main(String[] args) {
@@ -13,5 +15,14 @@ class EmployeeStuff {
     Employee ei = new Instructor("Rey", 3, 900000, 9);
     System.out.println(ei.getName() + " earns " + ((Instructor)ei).getMonthlyPay());
     System.out.println(((Instructor)ei).deliverLecture());
+
+    Professor p = new Professor("Obi Wan Kenobi", 4, 2000000, 9);
+
+    haveALecture(i);
+    haveALecture(p);
+  }
+
+  public static void haveALecture(Lecturer l) {
+    System.out.println(l.getName() + " says: " + l.deliverLecture());
   }
 }

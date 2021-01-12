@@ -1,6 +1,6 @@
 package employees;
 
-public class Instructor extends Employee {
+public class Instructor extends Employee implements Lecturer {
   private int appointmentMonths;
 
   public Instructor(String name, int id, double salary, int appointmentMonths) {
