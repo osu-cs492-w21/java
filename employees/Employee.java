@@ -1,6 +1,6 @@
 package employees;
 
-class Employee {
+public class Employee {
   private String name;
   private int id;
   private double payRate;
