@@ -1,3 +1,5 @@
+package employees;
+
 class Employee {
   private String name;
   private int id;
@@ -21,4 +23,3 @@ class Employee {
     return this.payRate * hoursWorked;
   }
 }
-
